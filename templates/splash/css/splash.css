@@ -7,8 +7,8 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 100vw; 
-    height: 92vh; 
+    width: 100vw;
+    height: auto; 
     overflow: hidden; 
     transition: max-height 0.7s ease-out;
     /* Enable hardware acceleration to fix laggy transitions */
@@ -34,10 +34,4 @@
     height: 40px;
     position: absolute;
     margin-top: 8%;
-}
-
-@media screen and (max-width: 768px) {
-    .usgh-splash {
-        height: auto;
-    }
 }
