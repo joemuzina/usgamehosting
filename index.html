@@ -31,7 +31,7 @@
 <link href="templates/aceorbit/html/css/responsive.css" rel="stylesheet">
 <link href="templates/aceorbit/html/css/menu-settings.css" rel="stylesheet">
 <link href="templates/aceorbit/html/css/extends.css" rel="stylesheet">
-<link href="templates/splash/css/a1.css" rel="stylesheet">
+<link href="templates/splash/css/splash.css" rel="stylesheet">
 <!---------------------------------------AceOrbit---------------------------------->
 
 
@@ -74,7 +74,7 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css" />
 
 </head>
-<body data-phone-cc-input="1">
+<body data-phone-cc-input="1" id="body">
 
 
 <!-- LOADER -->
@@ -95,7 +95,6 @@
 
 <div class="navbar-header col-xs-6 col-md-4">
 <!--<button type="button" class="navbar-toggle" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
-<a href="https://usgamehosting.com/"><img src="templates/aceorbit/html/images/headimglg.png" class="imgtest"></a></img>
 </div>
 <div class="open-icon"> <span></span> <span></span> <span></span> </div>
 <div class="header-container">
@@ -128,13 +127,20 @@
 <!-------end Header---------------->
 
 <!--Joe's Addition 5/4/2020-->
-<div class = "usgh-splash" id = "newload-splash" style = "width: 100vw; height: 100vh; max-height: 1080px; overflow: hidden; transition: max-height 0.2s ease-out;">
-    <h1>Placeholder</h1>
+<div class = "usgh-splash" id = "newload-splash" style = "max-height: 1080px;">
+    <div id = "video">
+        <video id = "splash-delay-video" muted autoplay class="splash-delay-video">
+            <source src="templates/splash/videos/test.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class = "splash-button" id = "splash-collapse">
+        <button class = "btn btn-danger">Learn More</button>
+    </div>
 </div>
 
 <!--End Joe's Addition-->
 
-<div style="background: url(templates/aceorbit/html/images/redblock.png); no-repeat center center; padding: 20px 0px 0 0;">
+<div id = "main-carousel" style="background: url(templates/aceorbit/html/images/redblock.png); no-repeat center center; padding: 20px 0px 0 0;">
 <div class="container">
 <div class ="col-md-12 col-sm-12 col-sm-offset-0">
 <div id="game-carousel" class="carousel slide" data-ride="carousel">
@@ -180,12 +186,12 @@
 
 <div class="block type-1 scroll-to-block" data-rel="1">
 <div class="container">
-<div style="visibility: hidden; animation-name: none;" class="row wow fadeInDown">
+<div class="row">
 <div class="block-header col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0">
 <h2 class="title">Our <font>Servers</font></h2>
 </div>
 </div>
-<div style="visibility: hidden; animation-name: none;" class="row wow fadeInUp">
+<div class="row">
 <div class="icon-entry col-xs-12 col-sm-6 col-md-4">
 <div class="service-icon"> <i class="fa fa-database"></i> </div>
 <div class="content">
@@ -581,7 +587,7 @@ minimized-style="bubble">
 <script src="templates/aceorbit/html/js/analytics.js"> </script>
 
 <!--Joe Splash-->
-<script src = "templates/splash/js/t9.js"></script>
+<script src = "templates/splash/js/splash.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {

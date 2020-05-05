@@ -1,0 +1,40 @@
+.usgh-splash{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100vw; 
+    height: 92vh; 
+    overflow: hidden; 
+    transition: max-height 0.7s ease-out;
+    /* Enable hardware acceleration to fix laggy transitions */
+    -webkit-transform: max-height 0.7s ease-out translateZ(0);
+    -moz-transform: max-height 0.7s ease-out translateZ(0);
+    -ms-transform: max-height 0.7s ease-out translateZ(0);
+    -o-transform: max-height 0.7s ease-out translateZ(0);
+    transform: max-height 0.7s ease-out translateZ(0);
+    background-color: #da3e41;
+}
+
+.splash-delay-video{
+    object-fit: cover;
+    object-position: 50% 0;
+    box-shadow: 0 0 17px black;
+    width: 100vw;
+}
+
+.splash-button{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-evenly;
+    height: 40px;
+    position: absolute;
+    margin-top: 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .usgh-splash {
+        height: auto;
+    }
+}
