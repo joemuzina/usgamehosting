@@ -1,3 +1,7 @@
+.usgh-splash-wrapper{
+    background-color: #da3e41;
+}
+
 .usgh-splash{
     position: relative;
     display: flex;
@@ -13,7 +17,6 @@
     -ms-transform: max-height 0.7s ease-out translateZ(0);
     -o-transform: max-height 0.7s ease-out translateZ(0);
     transform: max-height 0.7s ease-out translateZ(0);
-    background-color: #da3e41;
 }
 
 .splash-delay-video{
