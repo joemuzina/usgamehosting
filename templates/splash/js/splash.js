@@ -14,10 +14,11 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 
 $(document).ready(function() {
-    // Hide the welcome splash if user has already been welcomed
-    if ($.cookie('welcomed')) {
-        $('.usgh-splash-wrapper').hide();
-        return;
+    if (!$.cookie('welcomed')) {
+        $('.usgh-splash-wrapper').show();
+        var date = new Date();
+        date.setTime(date.getTime() + (WELCOME_DELAY * 60 * 1000));
+        $.cookie("welcomed", true, { expires: date });
     }
 
     var collapseHeight = document.getElementById("newload-splash").scrollHeight;
@@ -53,7 +54,4 @@ function collapseAway() {
     $("#newload-splash")[0].style.maxHeight = 0;
 
     COLLAPSED = true;
-    var date = new Date();
-    date.setTime(date.getTime() + (WELCOME_DELAY * 60 * 1000));
-    $.cookie("welcomed", true, { expires: date });
 }
