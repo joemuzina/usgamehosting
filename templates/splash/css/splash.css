@@ -7,7 +7,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: auto; 
     overflow: hidden; 
     transition: max-height 0.7s ease-out;
@@ -23,7 +23,7 @@
     object-fit: cover;
     object-position: 50% 0;
     box-shadow: 0 0 17px black;
-    width: 100vw;
+    width: 100%;
 }
 
 .splash-button{
